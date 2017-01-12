@@ -1,0 +1,13 @@
+language: android
+jdk: oraclejdk8
+sudo: true
+android:
+  components:
+  - platform-tools
+  - tools
+  - build-tools-$ANDROID_BUILD_TOOLS_VERSION
+  - android-$ANDROID_API_LEVEL
+  - addon-$ANDROID_TAG-google-$ANDROID_API_LEVEL
+  - extra-google-m2repository
+  - extra-android-m2repository
+  - sys-img-armeabi-v7a-$ANDROID_TARGET
